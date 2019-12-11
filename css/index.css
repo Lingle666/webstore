@@ -1,0 +1,362 @@
+@font-face {
+    font-family: 'Broadway';
+    src: url("../font/BroadwayRegular.ttf")
+}
+
+@font-face {
+    font-family: 'San Francisco';
+    src: url("../font/SanFrancisco.otf")
+}
+
+body {
+    font-family: "San Francisco"
+}
+
+a {
+    color: #3C2313;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top {
+    height: 85px;
+    background: #F9ED24;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 36px;
+    color: #3C2313;
+}
+
+.top-right {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top-right a {
+    color: #3C2313;
+    font-size: 24px;
+}
+
+.top-right span {
+    padding: 0 5px;
+}
+
+.top-right img {
+    padding-left: 30px;
+}
+
+header nav {
+    background: #3A2111;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 40px;
+}
+
+header nav ul {
+    display: flex;
+    line-height: 43px;
+
+}
+
+header nav ul a {
+    color: #fff;
+    display: block;
+    padding: 0 45px;
+    line-height: 64px;
+    font-family: "Broadway";
+    font-size: 24px;
+}
+
+header nav .cur a {
+    color: #F6ED24;
+}
+
+.logo {
+    font-family: "Broadway";
+    font-size: 30px;
+    color: #3C2313;
+}
+
+.avatar {
+    height: 52px;
+}
+
+.search {
+    position: relative;
+
+}
+
+.icon-search {
+    position: absolute;
+    top: 50%;
+    right: 8px;
+    transform: translateY(-50%);
+}
+
+.search-ipt {
+    height: 32px;
+    border-radius: 32px;
+    border: none;
+    padding: 0 40px;
+    width: 170px;
+}
+
+.sort {
+    padding: 0 50px;
+    font-size: 20px;
+    height: 90px;
+    box-shadow: 0 2px 6px #F2F2F2;
+    justify-content: flex-start;
+}
+
+.sort label {
+    font-size: 26px;
+    font-weight: 500;
+}
+
+.sort a {
+    margin-left: 50px;
+}
+
+.sort a.cur {
+    border-bottom: 2px solid #3C2313;
+}
+
+.product-wrap {
+    display: flex;
+    flex-flow: row wrap;
+    padding: 60px 0 0;
+}
+
+.product-wrap>li {
+    margin-bottom: 60px;
+    width: 25%;
+    padding: 0 70px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.product-wrap>li>div {
+    box-shadow: 0 2px 6px #F2F2F2;
+    padding: 10px;
+    height: 580px;
+    position: relative;
+}
+
+.product-wrap>li h3 {
+    text-align: center;
+    font-size: 20px;
+    line-height: 54px;
+}
+
+.product-wrap>li img {
+    margin: 0 auto;
+    max-height: 180px;
+}
+
+.product-wrap>li .product-img {
+    height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+
+
+.product-wrap li legend {
+    font-size: 20px;
+    line-height: 26px;
+}
+
+.colors {
+    display: flex;
+    flex-direction: column;
+}
+
+.colors li {
+    width: 100%;
+    font-size: 16px;
+    line-height: 20px;
+    padding-left: 40px;
+}
+
+.colors li span {
+    padding-left: 20px;
+}
+
+.ratings {
+    display: flex;
+    justify-content: center;
+}
+
+.ratings li {
+    width: 36px;
+}
+
+.ratings img {
+    width: 27px;
+    display: block;
+}
+
+.product-wrap li p {
+    text-align: center;
+}
+
+.product-wrap li .o-price {
+    font-size: 20px;
+    text-decoration: line-through;
+}
+
+.product-wrap li .price {
+    padding-left: 20px;
+    font-size: 30px;
+}
+
+.free-engraving {
+    margin: 14px auto;
+    display: flex;
+    border: 2px solid #000;
+    padding: 4px;
+    max-width: 215px;
+    justify-content: center;
+}
+
+.free-engraving input {
+    border: none;
+    border-bottom: 1px solid #000;
+    max-width: 120px;
+}
+
+.design {
+    margin: 15px 0;
+    display: block;
+    text-align: center;
+    border: 2px solid #000;
+    padding: 4px;
+
+}
+
+.add {
+
+    line-height: 30px;
+    background: #000;
+    text-align: center;
+    display: inline-block;
+    padding: 0 30px;
+    font-size: 16px;
+    color: #fff;
+    border-radius: 30px;
+}
+
+.fav {
+    position: absolute;
+    bottom: 15px;
+    right: 10px;
+}
+
+.page {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
+
+.page .prev {
+    font-weight: bold;
+    margin-right: 120px;
+}
+
+.page .next {
+    font-weight: bold;
+    margin-left: 120px;
+}
+
+.page p span {
+    padding-right: 55px;
+}
+
+.page p em {
+    font-style: normal;
+    display: inline-block;
+    background: #000;
+    color: #fff;
+    line-height: 30px;
+    padding: 0 4px;
+}
+
+main footer ul {
+    display: flex;
+}
+
+footer {
+    background: #000;
+    color: #fff;
+    padding: 0 40px;
+}
+
+footer a {
+    color: #fff;
+    font-size: 18px;
+}
+
+footer ul {
+    display: flex;
+
+}
+
+.first-nav {
+    position: relative;
+}
+
+.first-nav li {
+    line-height: 80px;
+    padding-right: 100px;
+}
+
+.first-nav li a {
+    letter-spacing: 3px;
+}
+
+.first-nav li:last-of-type {
+    padding: 0;
+}
+
+.first-nav:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 70%;
+    height: 2px;
+    background: #fff;
+}
+
+.second-nav ul {
+    justify-content: center;
+}
+
+.second-nav ul li {
+    margin: 40px 0;
+    padding: 0 70px;
+    line-height: 32px;
+    border-right: 2px solid #fff;
+}
+
+.second-nav ul li:last-of-type {
+    border: none;
+}
+
+.copyright {
+    line-height: 1;
+    padding-bottom: 20px;
+    color: #9FA0A0;
+}

@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I Fashion</title>
+    <meta name="description" content="[A short description]">
+    <meta name="author" content="[Your Name]">
+    <link rel="stylesheet" href="css/reset.css"> <!-- You may change this "Reset" to "Normalize" if preferred -->
+    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Broadway"> -->
+    <link rel="stylesheet" href="css/index.css">
+  </head>
+  <body>
+    <header>
+      <div class="top">
+        <a class="logo" href="index.html">I Fashion</a>
+        <div class="top-right">
+          <a href="#">Login</a>
+          <span>/</span>
+          <a href="#">Register</a><img class="avatar" src="img/avatar.png">
+        </div>
+      </div>
+      
+
+      <!-- Navigation menu and toggle button (non-functional) -->
+      <nav aria-label="Primary">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li class="cur"><a href="#">Hot Stuff</a></li>
+          <li><a href="#">Sales</a></li>
+          <li><a href="#">Clothes</a></li>
+          <li><a href="#">Pants</a></li>
+        </ul>
+        <form class="search flex">
+            <input class="search-ipt" type="search" name="find" id="find">
+            <img class="icon-search" src="img/icon-search.png">
+        </form>
+      </nav>
+    </header>
+
+    <main>
+      <section class="sort flex">
+        <label>Sort By:</label><a class="cur" href="javascript:;">Recommended</a><a href="javascript:;">Price: Low to High</a><a href="javascript:;">Price: High to Low</a>
+      </section>
+
+      <section>
+        <ul id="products" class="product-wrap">
+          <!-- Product 1 -->
+          <!-- <article class="product">
+            <header>
+              <img src="img/product.jpg" alt="Product Image">
+            </header>
+            <h3>Product Name</h3>
+            <p>Here is a shot of this product that might entice a user to click and add it to their cart.</p>
+            <form>
+              <fieldset>
+                <legend>Colours</legend>
+                <ul>
+                  <li><label><input type="radio" name="colour" value="r"> <span>Red</span></label></li>
+                  <li><label><input type="radio" name="colour" value="w"> <span>White</span></label></li>
+                  <li><label><input type="radio" name="colour" value="b"> <span>Blue</span></label></li>
+                </ul>
+              </fieldset>
+
+              <fieldset>
+                <legend>Sizes</legend>
+                <ol>
+                  <li><label><input type="radio" name="size" value="m"> <span>M</span></label></li>
+                  <li><label><input type="radio" name="size" value="l"> <span>L</span></label></li>
+                  <li><label><input type="radio" name="size" value="xl"> <span>XL</span></label></li>
+                </ol>
+              </fieldset>
+
+              <footer>
+                <dl>
+                  <dt>Rating</dt>
+                  <dd>4.4 <span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star_half</span></dd>
+                </dl>
+                <data value="39"><del>$50.00</del> <ins>$39.00</ins></data>
+                <button type="button"><span class="material-icons">add_shopping_cart</span> Add to Cart</button>
+                <button type="button"><span class="material-icons">favorite</span></button>
+                <a href="#">see more</a>
+              </footer>
+            </form>
+          </article> -->
+
+          <!-- <li>
+            <h3>Mens leather jacket</h3>
+            <img src="img/Untitled-3-01.png">
+            <form>
+              <fieldset>
+                <legend>Colours</legend>
+                <ul>
+                  <li><label><input type="radio" name="colour" value="r"> <span>Red</span></label></li>
+                  <li><label><input type="radio" name="colour" value="w"> <span>White</span></label></li>
+                  <li><label><input type="radio" name="colour" value="b"> <span>Blue</span></label></li>
+                </ul>
+              </fieldset>
+              <fieldset>
+                  <legend>Sizes:</legend>
+                  <ul>
+                    <li><label><input type="radio" name="colour" value="r"> <span>Red</span></label></li>
+                    <li><label><input type="radio" name="colour" value="w"> <span>White</span></label></li>
+                    <li><label><input type="radio" name="colour" value="b"> <span>Blue</span></label></li>
+                  </ul>
+                </fieldset>
+                <fieldset>
+                    <legend>Ratings：</legend>
+                    <ul>
+                      <li><img src="img/star.png"></li>
+                      <li><img src="img/star.png"></li>
+                      <li><img src="img/star.png"></li>
+                      <li><img src="img/star.png"></li>
+                      <li><img src="img/star.png"></li>
+                    </ul>
+                  </fieldset>
+                  <p><span class="o-price">$229</span><span class="price">$150</span></p>
+            </form>  
+          </li> -->
+        </ul>
+      </section>
+
+ 
+        <nav class="page" aria-label="Product Pages">
+          <a href="#" class="prev" aria-label="Previous page"><</a>
+          <p><span>Page:</span><em>1</em> of 2</p>
+          <a href="#" class="next" aria-label="Next page">></a>
+        </nav>
+   
+    </main>
+
+    <footer>
+      
+      <nav class="first-nav" aria-label="Legal">
+        <ul>
+          <li><a href="#">About FortuneCoffee</a></li>
+          <li><a href="#">Ways to Order</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">SPC Program</a></li>
+          <li><a href="#">Instant Savings</a></li>
+        </ul>
+      </nav>
+      <nav class="second-nav" aria-label="Legal">
+        <ul>
+            <li><a href="#">POLICY STATEMENT</a></li>
+            <li><a href="#">TERMS OF USE</a></li>
+            <li><a href="#">JOBS OFFER</a></li>
+            <li><a href="#">SALES AND REFUNDS</a></li>
+        </ul>
+    </nav>
+      <p class="copyright">&copy; 2020 I Fashion company. All rights reserved.</p>
+    </footer>
+
+    <script src="js/index.js"></script>
+  </body>
+</html>
